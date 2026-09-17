@@ -2,7 +2,7 @@ package lab_1;
 
 public class task_3 {
 
-    // Вхідні дані як константи
+    // Константи
     public static final double A = -2.54;
     public static final double B = 1.23;
     public static final double C = -2.14;
