@@ -9,14 +9,14 @@ public class task_1 {
     public static final double D = 2.542;
 
     // Функція для обчислення y
-    public static double calculateY(double a, double b, double c, double d) {
-        return Math.sqrt(Math.abs(Math.sin(a) - (4 * Math.log(b)) / Math.pow(c, d))
+    public static double calculateY() {
+        return Math.sqrt(Math.abs(Math.sin(A) - (4 * Math.log(B)) / Math.pow(C, D))
         );
     }
 
     public static void main(String[] args) {
 
-        double y = calculateY(A, B, C, D);
+        double y = calculateY();
 
         System.out.println("Розв'язок задачі:");
         System.out.println("y = " + y);
