@@ -20,7 +20,7 @@ public class task_2 {
 
         double y = calculateY();
 
-        System.out.println("Результат обчислення:");
+        System.out.println("Розв'язок задачі:");
         System.out.printf("y = %.2f%n", y);
     }
 }

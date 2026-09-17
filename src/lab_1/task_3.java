@@ -18,6 +18,7 @@ public class task_3 {
 
         double y = calculateY();
 
+        System.out.println("Розв'язок задачі:");
         System.out.printf("y = %.4f%n", y);
     }
 }
