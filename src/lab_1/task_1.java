@@ -10,8 +10,7 @@ public class task_1 {
 
     // Функція для обчислення y
     public static double calculateY(double a, double b, double c, double d) {
-        return Math.sqrt(
-                Math.abs(Math.sin(a) - (4 * Math.log(b)) / Math.pow(c, d))
+        return Math.sqrt(Math.abs(Math.sin(a) - (4 * Math.log(b)) / Math.pow(c, d))
         );
     }
 
