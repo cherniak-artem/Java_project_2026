@@ -63,6 +63,7 @@ public class task_1 {
         return sum;
     }
 
+    //Виведення результату
     static void printResults(double m, int k) {
 
         System.out.print("m: " + m + " k: " + k + " result: ");
