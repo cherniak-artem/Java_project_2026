@@ -55,7 +55,7 @@ public class task_1 {
                 System.out.println("Результат = " + result);
 
             } catch (IllegalArgumentException | NullPointerException e) {
-                System.out.println("Помилка — " + e.getMessage());
+                System.out.println("Помилка - " + e.getMessage());
             }
         }
     }

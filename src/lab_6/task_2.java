@@ -51,7 +51,7 @@ public class task_2 {
                 System.out.println("Кількість слів = " + result);
 
             } catch (IllegalArgumentException | NullPointerException e) {
-                System.out.println("Помилка — " + e.getMessage());
+                System.out.println("Помилка - " + e.getMessage());
             }
         }
     }
