@@ -32,34 +32,27 @@ public class task_2 {
 
     public static void main(String[] args) {
 
-        //Правильні приклади
-        System.out.println(countWords(
-                "Hello world Java programming"
-        )); // 4
+        String[] tests = {
+                "Hello world Java programming",
+                "The user with nickname koala757677 left 3 comments",
+                "Java2026 is a programming language",
+                "One two three four five",
+                "",
+                "123 456 789",
+                null
+        };
 
-        System.out.println(countWords(
-                "The user with nickname koala757677 left 3 comments"
-        )); // 8
+        for (int i = 0; i < tests.length; i++) {
 
-        System.out.println(countWords(
-                "Java2026 is a programming language"
-        )); // 5
+            System.out.print("Рядок " + (i + 1) + ": ");
 
-        System.out.println(countWords(
-                "One two three four five"
-        )); // 5
+            try {
+                int result = countWords(tests[i]);
+                System.out.println("Кількість слів = " + result);
 
-        //Перевірка порожнього рядка
-        System.out.println(countWords("")); // 0
-
-        //Перевірка рядка, який містить тільки цифри
-        System.out.println(countWords("123 456 789")); // 0
-
-        //Перевірка неправильного аргументу
-        try {
-            System.out.println(countWords(null));
-        } catch (NullPointerException e) {
-            System.out.println("Помилка: " + e.getMessage());
+            } catch (IllegalArgumentException | NullPointerException e) {
+                System.out.println("Помилка — " + e.getMessage());
+            }
         }
     }
 }

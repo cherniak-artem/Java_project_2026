@@ -35,35 +35,28 @@ public class task_1 {
 
     public static void main(String[] args) {
 
-        //Правильні приклади
-        System.out.println(binaryStringToInt("10101")); // 21
-        System.out.println(binaryStringToInt("1111"));   // 15
-        System.out.println(binaryStringToInt("1000"));   // 8
-        System.out.println(binaryStringToInt("000101")); // 5
+        String[] tests = {
+                "10101",
+                "1111",
+                "1000",
+                "000101",
+                "10201",
+                "",
+                null,
+                "11111111111111111111111111111111"
+        };
 
-        //Перевірка неправильних аргументів
-        try {
-            System.out.println(binaryStringToInt("10201"));
-        } catch (IllegalArgumentException e) {
-            System.out.println("Помилка: " + e.getMessage());
-        }
+        for (int i = 0; i < tests.length; i++) {
 
-        try {
-            System.out.println(binaryStringToInt(""));
-        } catch (IllegalArgumentException e) {
-            System.out.println("Помилка: " + e.getMessage());
-        }
+            System.out.print("Рядок " + (i + 1) + ": ");
 
-        try {
-            System.out.println(binaryStringToInt(null));
-        } catch (NullPointerException e) {
-            System.out.println("Помилка: " + e.getMessage());
-        }
+            try {
+                int result = binaryStringToInt(tests[i]);
+                System.out.println("Результат = " + result);
 
-        try {
-            System.out.println(binaryStringToInt("11111111111111111111111111111111"));
-        } catch (IllegalArgumentException e) {
-            System.out.println("Помилка: " + e.getMessage());
+            } catch (IllegalArgumentException | NullPointerException e) {
+                System.out.println("Помилка — " + e.getMessage());
+            }
         }
     }
 }
