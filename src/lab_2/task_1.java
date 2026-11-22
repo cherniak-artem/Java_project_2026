@@ -2,7 +2,7 @@ package lab_2;
 
 public class task_1 {
 
-    //введення значень змінних
+    //Введення значень змінних
     public static void main(String[] args) {
         printResults(1, 5);
         printResults(2, 10);
